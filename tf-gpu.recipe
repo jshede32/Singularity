@@ -1,0 +1,20 @@
+Bootstrap: shub
+From: marcc-hpc/tensorflow:1.8.0-gpu
+
+
+%post
+	su
+	apt-get install sudo
+	exit
+	sudo apt-get install vim
+	sudo apt-get install git
+	sudo apt-get install wget
+	sudo apt-get install ffmpeg
+	pip install pymongo
+	pip install geopy
+	pip install pandas
+	pip install keras
+	pip install PIL
+	pip install numpy
+	pip install scipy
+	pip install azure
