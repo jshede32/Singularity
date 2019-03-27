@@ -18,3 +18,4 @@ From: marcc-hpc/tensorflow:1.8.0-gpu
 	pip install numpy
 	pip install scipy
 	pip install azure
+	pip install python-opencv
