@@ -3,6 +3,7 @@ From: marcc-hpc/tensorflow:1.8.0-gpu
 
 
 %post
+	RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 	su
 	apt-get install sudo
 	exit
