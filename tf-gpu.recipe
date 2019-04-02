@@ -1,2 +1,16 @@
 Bootstrap: docker
-From: valian/docker-python-opencv-ffmpeg
+From: valian/docker-python-opencv-ffmpeg:cuda-py3
+
+
+%post
+	su
+	apt-get update
+	exit
+	sudo apt-get install vim
+	sudo apt-get install wget
+	pip3 install tensorflow-gpu
+	pip install tensorflow-gpu
+	pip install geopy
+	pip install PIL
+	pip install numpy
+	pip install scilearn
